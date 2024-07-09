@@ -1,0 +1,15 @@
+<!-- views/sinhvien.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Danh sách sinh viên</title>
+</head>
+<body>
+  <h1>Danh sách sinh viên</h1>
+  <ul>
+    <% sinhviens.forEach(sinhvien => { %>
+      <li><%= sinhvien.name %> - <%= sinhvien.age %> - <%= sinhvien.major %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
